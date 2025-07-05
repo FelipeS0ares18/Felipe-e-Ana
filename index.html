@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Felipe e Ana</title>
+
+  <!-- Ícone SVG com iniciais F A -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,
+    %3Csvg xmlns='http://www.w3.org/2000/svg' width='64' height='64' viewBox='0 0 64 64'%3E
+    %3Crect width='100%25' height='100%25' fill='%23e9defa'/%3E
+    %3Ctext x='50%25' y='55%25' text-anchor='middle' font-size='28' font-family='Segoe UI, sans-serif' fill='%235c5470'%3EF A%3C/text%3E
+    %3C/svg%3E">
+
+  <style>
+    :root {
+      --bg-color: #f9f9f9;
+      --text-color: #333;
+      --box-bg: #ffffff;
+      --serenity: #cbddeb;
+      --lavender: #e9defa;
+      --accent-text: #5c5470;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg-color: #121212;
+        --text-color: #f0f0f0;
+        --box-bg: #1e1e1e;
+        --serenity: #3a4b5f;
+        --lavender: #403452;
+        --accent-text: #cfc1f0;
+      }
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 1rem;
+    }
+
+    .container {
+      background-color: var(--box-bg);
+      padding: 2rem 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      text-align: center;
+      width: 100%;
+      max-width: 400px;
+      border: 1px solid var(--serenity);
+    }
+
+    .animated-message {
+      font-size: 1rem;
+      color: var(--accent-text);
+      margin-bottom: 1.2rem;
+      opacity: 0;
+      animation: fadeSlide 2s ease-out forwards;
+    }
+
+    @keyframes fadeSlide {
+      0% {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .container h1 {
+      font-size: 1.5rem;
+      margin-bottom: 1.2rem;
+      color: var(--accent-text);
+    }
+
+    .qr-code {
+      width: 100%;
+      max-width: 280px;
+      height: auto;
+      border-radius: 10px;
+      margin-bottom: 1rem;
+      border: 2px solid var(--lavender);
+    }
+
+    .pix-key {
+      font-size: 0.95rem;
+      color: var(--text-color);
+      word-break: break-word;
+      background: var(--lavender);
+      padding: 0.6rem;
+      border-radius: 6px;
+      border-left: 3px solid var(--serenity);
+    }
+
+    .thank-you {
+      margin-top: 1.5rem;
+      font-style: italic;
+      font-size: 0.9rem;
+      color: #777;
+    }
+
+    @media (max-width: 400px) {
+      .container {
+        padding: 1.5rem 1rem;
+      }
+
+      .container h1 {
+        font-size: 1.35rem;
+      }
+
+      .animated-message {
+        font-size: 0.9rem;
+      }
+
+      .thank-you {
+        font-size: 0.85rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="animated-message">Agradecemos por participar do nosso sonho!</div>
+    <h1>Presenteie com Pix 💖</h1>
+    <img src="/Pix casamento/QRcode.jfif" alt="QR Code Pix" class="qr-code">
+    <div class="pix-key">Chave Pix: 158.173.657-66</div>
+    <div class="thank-you">
+      Agradecemos de coração pelo seu presente!<br><br>
+      O QR Code deve ser lido diretamente dentro do aplicativo do seu banco.
+    </div>
+  </div>
+</body>
+</html>
